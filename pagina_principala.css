@@ -1,0 +1,134 @@
+/* ===== CULORI MOV (variabile) ===== */
+:root {
+    --mov-inchis: #4A0E78;
+    /* mov foarte inchis - header, footer */
+    --mov-principal: #6B21A8;
+    /* mov principal */
+    --mov-mediu: #7C3AED;
+    /* mov mediu - butoane */
+    --mov-deschis: #A78BFA;
+    /* mov deschis - hover, accente */
+    --mov-foarte-deschis: #EDE9FE;
+    /* mov palid - fundal articole */
+    --mov-pastel: #F5F3FF;
+    /* mov pastel - fundal body */
+    --text-inchis: #2D1B4E;
+    /* text principal pe fundal deschis */
+    --text-deschis: #FFFFFF;
+    /* text pe fundal mov inchis */
+}
+
+/* ===== RESET & GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-inchis);
+    background-color: var(--mov-pastel);
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: var(--mov-inchis);
+    border-bottom: 3px solid var(--mov-deschis);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav button {
+    background-color: var(--mov-mediu);
+    color: var(--text-deschis);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: var(--mov-deschis);
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== TITLU PRINCIPAL ===== */
+h1 {
+    color: var(--mov-principal);
+    margin-bottom: 25px;
+    font-size: 2em;
+    border-bottom: 3px solid var(--mov-deschis);
+    padding-bottom: 10px;
+}
+
+/* ===== GRID CARDURI ===== */
+.grid-carduri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* ===== CARDURI (ARTICOLE) ===== */
+article {
+    padding: 25px;
+    background-color: var(--mov-foarte-deschis);
+    border-left: 4px solid var(--mov-mediu);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article h2 {
+    color: var(--mov-inchis);
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 8px;
+    color: var(--text-inchis);
+}
+
+article button {
+    background-color: var(--mov-principal);
+    color: var(--text-deschis);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+article button:hover {
+    background-color: var(--mov-mediu);
+}
+
+/* ===== CARD CENTRAT (GitHub) ===== */
+.card-centrat {
+    grid-column: 1 / -1;
+    max-width: 48%;
+    justify-self: center;
+}
+
+/* ===== LINKURI ===== */
+a {
+    text-decoration: none;
+}
