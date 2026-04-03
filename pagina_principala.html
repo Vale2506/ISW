@@ -13,7 +13,15 @@
             <img src="A:\Proiect\photo\logo_transp.png" alt="Logo-ul Meu">
         </div>
         <nav>
-            <button type="button" onclick="alert('Meniul va fi implementat ulterior')">Meniu ☰ </button>
+            <button type="button" class="btn-meniu" onclick="toggleMeniu()">☰</button>
+            <ul class="lista-meniu" id="meniu">
+                <li><a href="pagina_principala.html">Acasă</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="C.html">C / C++ / C#</a></li>
+                <li><a href="htmlcss.html">HTML & CSS</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="github.html">GitHub</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -70,6 +78,7 @@
         </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

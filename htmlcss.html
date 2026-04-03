@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pagini_interne.css">
+    <link rel="stylesheet" href="htmlcss.css">
+    <title>Despre HTML și CSS</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="A:\Proiect\photo\logo_transp.png" alt="Logo-ul Meu">
+        </div>
+        <nav>
+            <button type="button" class="btn-meniu" onclick="toggleMeniu()">☰</button>
+            <ul class="lista-meniu" id="meniu">
+                <li><a href="pagina_principala.html">Acasă</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="C.html">C / C++ / C#</a></li>
+                <li><a href="htmlcss.html">HTML & CSS</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="github.html">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Despre HTML și CSS</h1>
+
+        <div class="sectiune">
+            <h2>HTML — Structura și Arhitectura Informației</h2>
+            <p>HTML (HyperText Markup Language) este limbajul standard de marcare utilizat pentru
+                crearea și structurarea paginilor web. Nu este un limbaj de programare, ci un limbaj
+                de marcare care definește structura conținutului.</p>
+            <h3>Elemente cheie HTML</h3>
+            <ul>
+                <li>Tag-uri semantice: header, nav, main, article, footer</li>
+                <li>Formulare pentru interacțiunea cu utilizatorul</li>
+                <li>Elemente multimedia: imagini, video, audio</li>
+                <li>Tabele pentru organizarea datelor</li>
+            </ul>
+        </div>
+
+        <div class="sectiune">
+            <h2>CSS — Identitate Vizuală și Experiență Digitală</h2>
+            <p>CSS (Cascading Style Sheets) este limbajul folosit pentru a descrie prezentarea
+                unui document HTML. CSS controlează aspectul vizual: culori, fonturi, spațieri,
+                layout-uri și animații.</p>
+            <h3>Concepte importante CSS</h3>
+            <ul>
+                <li>Selectori și specificitate</li>
+                <li>Box Model: margin, border, padding, content</li>
+                <li>Flexbox și CSS Grid pentru layout</li>
+                <li>Variabile CSS (Custom Properties)</li>
+                <li>Media Queries pentru design responsive</li>
+            </ul>
+        </div>
+
+        <div class="sectiune">
+            <h2>Cum lucrează împreună?</h2>
+            <p>HTML oferă structura (scheletul), iar CSS oferă stilul (hainele).
+                Împreună, ele formează baza oricărui site web modern. HTML-ul definește <strong>ce</strong>
+                se afișează, iar CSS-ul definește <strong>cum</strong> arată.</p>
+        </div>
+
+        <a href="pagina_principala.html" class="btn-inapoi">← Înapoi la pagina principală</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
