@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ro">
 
@@ -11,17 +12,22 @@
 <body>
     <header>
         <div class="logo">
-            <img src="A:\Proiect\photo\logo_transp.png" alt="Logo-ul Meu">
+            <img src="photo/logo_transp.png" alt="Logo-ul Meu">
         </div>
         <nav>
             <button type="button" class="btn-meniu" onclick="toggleMeniu()">☰</button>
             <ul class="lista-meniu" id="meniu">
-                <li><a href="pagina_principala.html">Acasă</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a href="C.html">C / C++ / C#</a></li>
-                <li><a href="htmlcss.html">HTML & CSS</a></li>
-                <li><a href="java.html">Java</a></li>
-                <li><a href="github.html">GitHub</a></li>
+                <li><a href="pagina_principala.php">Acasă</a></li>
+                <li><a href="python.php">Python</a></li>
+                <li><a href="C.php">C / C++ / C#</a></li>
+                <li><a href="htmlcss.php">HTML & CSS</a></li>
+                <li><a href="java.php">Java</a></li>
+                <li><a href="github.php">GitHub</a></li>
+                <?php if(isset($_SESSION['user_id'])): ?>
+                    <li><a href="profil.php">Contul Meu</a></li>
+                <?php else: ?>
+                    <li><a href="login.php">Autentificare</a></li>
+                <?php endif; ?>
             </ul>
         </nav>
     </header>
@@ -69,7 +75,14 @@
             </ul>
         </div>
 
-        <a href="pagina_principala.html" class="btn-inapoi">← Înapoi la pagina principală</a>
+        <div class="sectiune">
+            <h2>Quiz Java</h2>
+            <p>Ești gata să îți testezi cunoștințele? Quiz-ul conține 5 întrebări grilă bazate strict pe textul de mai sus.</p>
+            <br>
+            <a href="quiz.php?m=Java" class="btn-inapoi" style="margin-top: 5px;">Începe Quiz-ul</a>
+        </div>
+
+        <a href="pagina_principala.php" class="btn-inapoi">← Înapoi la pagina principală</a>
     </main>
 
     <script src="script.js"></script>
