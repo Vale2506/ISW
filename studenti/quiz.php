@@ -67,7 +67,7 @@ $quiz = $quizzes[$materie];
 
                 <?php foreach ($quiz as $key => $data): ?>
                     <div class="question-block">
-                        <p><?php echo htmlspecialchars($data['text']); ?></p>
+                        <p><?php echo $data['text']; ?></p>
                         <?php foreach ($data['options'] as $value => $label): ?>
                             <label>
                                 <input type="radio" name="<?php echo htmlspecialchars($key); ?>" value="<?php echo htmlspecialchars($value); ?>" required>

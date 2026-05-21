@@ -88,7 +88,7 @@ if (isset($quizzes[$materie])) {
             <h3>Feedback detalii:</h3>
             <?php foreach ($feedback as $item): ?>
                 <div class="feedback-item <?php echo $item['is_correct'] ? 'feedback-correct' : 'feedback-incorrect'; ?>">
-                    <p><strong>Întrebare:</strong> <?php echo htmlspecialchars($item['question']); ?></p>
+                    <p><strong>Întrebare:</strong><br> <?php echo $item['question']; ?></p>
                     <p><strong>Răspunsul tău:</strong> <?php echo htmlspecialchars($item['user_answer']); ?> 
                         <?php if ($item['is_correct']): ?>
                             <span style="color: #4caf50; font-weight: bold;">(Corect!) ✓</span>

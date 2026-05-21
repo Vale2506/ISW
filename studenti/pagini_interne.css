@@ -160,3 +160,19 @@ main h1 {
 a {
     text-decoration: none;
 }
+
+/* ===== CODE BLOCKS (W3Schools Style) ===== */
+.code-block {
+    background-color: #282A36;
+    color: #F8F8F2;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    overflow-x: auto;
+    border-left: 4px solid var(--mov-deschis);
+    margin: 15px 0;
+}
+.code-block code {
+    white-space: pre;
+}

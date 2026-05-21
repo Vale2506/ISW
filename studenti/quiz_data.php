@@ -29,22 +29,22 @@ $quizzes = [
             'correct' => 'Inteligență artificială și Machine Learning'
         ],
         'q4' => [
-            'text' => '4. Care este un avantaj specific al limbajului Python?',
+            'text' => '4. Ce va afișa următorul cod Python?<br><div class="code-block"><pre><code>def salut_student(nume):<br>    print("Salutare, " + nume + "!")<br><br>salut_student("Alex")</code></pre></div>',
             'options' => [
-                'Sintaxă greoaie' => 'O sintaxă complexă și greu de citit',
-                'Prototipare rapidă' => 'Este ideal pentru prototipare rapidă',
-                'Rulează doar pe Windows' => 'Rulează exclusiv pe sisteme Windows'
+                'Eroare' => 'Eroare de sintaxă',
+                'Salutare, Alex!' => 'Salutare, Alex!',
+                'Salutare, nume!' => 'Salutare, nume!'
             ],
-            'correct' => 'Prototipare rapidă'
+            'correct' => 'Salutare, Alex!'
         ],
         'q5' => [
-            'text' => '5. Ce framework-uri web au fost menționate ca fiind folosite cu Python?',
+            'text' => '5. În codul Python, ce lipsește intenționat la finalul instrucțiunilor (cum ar fi "print"), spre deosebire de C++ sau Java?',
             'options' => [
-                'Django, Flask' => 'Django și Flask',
-                'Spring, Hibernate' => 'Spring și Hibernate',
-                'React, Angular' => 'React și Angular'
+                'Acoladele' => 'Acoladele',
+                'Punct și virgulă (;)' => 'Punct și virgulă (;)',
+                'Ghilimelele' => 'Ghilimelele'
             ],
-            'correct' => 'Django, Flask'
+            'correct' => 'Punct și virgulă (;)'
         ]
     ],
     'C' => [
@@ -76,22 +76,22 @@ $quizzes = [
             'correct' => 'Programarea orientată pe obiecte (OOP)'
         ],
         'q4' => [
-            'text' => '4. Ce înseamnă STL în C++?',
+            'text' => '4. Privind exemplul de cod C++, cu ce se termină obligatoriu instrucțiunea "cout"?<br><div class="code-block"><pre><code>cout &lt;&lt; "Salutare!" &lt;&lt; endl;</code></pre></div>',
             'options' => [
-                'Standard Template Library' => 'Standard Template Library',
-                'System Type Link' => 'System Type Link',
-                'Simple Text Language' => 'Simple Text Language'
+                'Punct și virgulă (;)' => 'Punct și virgulă (;)',
+                'Două puncte (:)' => 'Două puncte (:)',
+                'Nimic' => 'Cu nimic, se trece la rândul următor'
             ],
-            'correct' => 'Standard Template Library'
+            'correct' => 'Punct și virgulă (;)'
         ],
         'q5' => [
-            'text' => '5. Ce funcționalitate esențială oferă C# dezvoltat de Microsoft?',
+            'text' => '5. Ce face biblioteca <code>&lt;iostream&gt;</code> inclusă la începutul codului C++?',
             'options' => [
-                'Garbage collection automat' => 'Garbage collection automat',
-                'Acces manual la memorie' => 'Management manual al memoriei (fără alocare dinamică)',
-                'Rulează doar pe Linux' => 'Suport exclusiv pentru Linux'
+                'Grafică' => 'Desenează grafică 3D',
+                'Afișare' => 'Permite afișarea textelor pe ecran',
+                'Baze de date' => 'Conectează aplicația la baza de date'
             ],
-            'correct' => 'Garbage collection automat'
+            'correct' => 'Afișare'
         ]
     ],
     'Java' => [
@@ -123,22 +123,22 @@ $quizzes = [
             'correct' => 'JVM'
         ],
         'q4' => [
-            'text' => '4. Cum se obține o performanță excelentă în Java (conform avantajelor din curs)?',
+            'text' => '4. Ce va afișa următorul cod Java?<br><div class="code-block"><pre><code>String nume = "Student";<br>int nota = 10;<br>System.out.println(nume + " a luat nota " + nota);</code></pre></div>',
             'options' => [
-                'Prin JIT compilation' => 'Prin compilare JIT (Just-In-Time)',
-                'Prin scrierea exclusivă în C' => 'Transformând codul în limbaj C',
-                'Prin dezactivarea securității' => 'Oprind mecanismele de securitate'
+                'Student a luat nota 10' => 'Student a luat nota 10',
+                'nume a luat nota nota' => 'nume a luat nota nota',
+                'Eroare' => 'Eroare de compilare'
             ],
-            'correct' => 'Prin JIT compilation'
+            'correct' => 'Student a luat nota 10'
         ],
         'q5' => [
-            'text' => '5. Ce reprezintă Garbage Collection în conceptele cheie Java?',
+            'text' => '5. În exemplul de cod Java, cuvintele cheie <code>public class Main</code> demonstrează faptul că în Java:',
             'options' => [
-                'Gestionarea automată a memoriei' => 'Mecanism de gestionare automată a memoriei',
-                'Ștergerea codului vechi' => 'O funcție care șterge codul vechi',
-                'Tratarea erorilor' => 'Un mecanism de tratare a erorilor'
+                'Clase' => 'Absolut tot codul trebuie să fie în interiorul unei clase',
+                'Fără clase' => 'Clasele sunt opționale',
+                'Funcții globale' => 'Se folosesc doar funcții globale ca în C'
             ],
-            'correct' => 'Gestionarea automată a memoriei'
+            'correct' => 'Clase'
         ]
     ],
     'HTMLCSS' => [
@@ -161,16 +161,7 @@ $quizzes = [
             'correct' => 'header, nav, article'
         ],
         'q3' => [
-            'text' => '3. Ce aspecte controlează CSS-ul?',
-            'options' => [
-                'Aspectul vizual' => 'Aspectul vizual: culori, fonturi, layout-uri',
-                'Baza de date' => 'Conexiunea cu baza de date SQL',
-                'Logica din spate' => 'Logica de autentificare a utilizatorilor'
-            ],
-            'correct' => 'Aspectul vizual'
-        ],
-        'q4' => [
-            'text' => '4. Din ce este alcătuit Box Model-ul în CSS?',
+            'text' => '3. Din ce este alcătuit Box Model-ul în CSS?',
             'options' => [
                 'margin, border, padding, content' => 'margin, border, padding, content',
                 'header, footer, nav' => 'header, footer, nav',
@@ -178,14 +169,23 @@ $quizzes = [
             ],
             'correct' => 'margin, border, padding, content'
         ],
-        'q5' => [
-            'text' => '5. Care este metafora folosită în curs pentru a descrie relația dintre ele?',
+        'q4' => [
+            'text' => '4. Analizând codul CSS următor, ce aspect vizual primește butonul HTML?<br><div class="code-block"><pre><code>.btn-frumos {<br>    color: white;<br>}</code></pre></div>',
             'options' => [
-                'Schelet și haine' => 'HTML oferă structura (scheletul), iar CSS oferă stilul (hainele)',
-                'Motor și roți' => 'HTML este motorul, iar CSS sunt roțile mașinii',
-                'Server și client' => 'HTML este serverul, iar CSS este clientul'
+                'Text alb' => 'Textul din interiorul butonului devine alb',
+                'Fundal alb' => 'Fundalul butonului devine alb',
+                'Margine albă' => 'Butonul primește o margine albă'
             ],
-            'correct' => 'Schelet și haine'
+            'correct' => 'Text alb'
+        ],
+        'q5' => [
+            'text' => '5. În codul HTML, atributul <code>class="btn-frumos"</code> este folosit în CSS cu ce simbol în față pentru a fi selectat?',
+            'options' => [
+                'Punct (.)' => 'Punct (.) - de exemplu: .btn-frumos',
+                'Diez (#)' => 'Diez (#) - de exemplu: #btn-frumos',
+                'Fără simbol' => 'Fără niciun simbol - de exemplu: btn-frumos'
+            ],
+            'correct' => 'Punct (.)'
         ]
     ],
     'GitHub' => [
@@ -199,13 +199,13 @@ $quizzes = [
             'correct' => 'Linus Torvalds în 2005'
         ],
         'q2' => [
-            'text' => '2. Ce comandă se folosește pentru a trimite codul pe GitHub?',
+            'text' => '2. Pentru ce sunt folosite "GitHub Pages"?',
             'options' => [
-                'git push' => 'git push',
-                'git init' => 'git init',
-                'git pull' => 'git pull'
+                'Hosting gratuit' => 'Hosting gratuit pentru site-uri statice',
+                'Urmărirea bug-urilor' => 'Urmărirea bug-urilor',
+                'Automatizare CI/CD' => 'Automatizare proceselor CI/CD'
             ],
-            'correct' => 'git push'
+            'correct' => 'Hosting gratuit'
         ],
         'q3' => [
             'text' => '3. Ce funcționalitate are comanda "git clone"?',
@@ -217,22 +217,22 @@ $quizzes = [
             'correct' => 'Clonează un repository'
         ],
         'q4' => [
-            'text' => '4. Pentru ce sunt folosite "GitHub Pages"?',
+            'text' => '4. Care dintre comenzile de mai jos se folosește pentru a salva modificările local, asociindu-le cu un mesaj?<br><div class="code-block"><pre><code>git ______ -m "Mesaj"</code></pre></div>',
             'options' => [
-                'Hosting gratuit' => 'Hosting gratuit pentru site-uri statice',
-                'Urmărirea bug-urilor' => 'Urmărirea bug-urilor',
-                'Automatizare CI/CD' => 'Automatizare proceselor CI/CD'
+                'commit' => 'commit',
+                'push' => 'push',
+                'add' => 'add'
             ],
-            'correct' => 'Hosting gratuit'
+            'correct' => 'commit'
         ],
         'q5' => [
-            'text' => '5. Câți dezvoltatori folosesc GitHub la nivel mondial (conform textului)?',
+            'text' => '5. Conform fluxului standard prezentat (add -> commit -> push), ce face ultima comandă <code>git push origin main</code>?',
             'options' => [
-                'Peste 100 de milioane' => 'Peste 100 de milioane de dezvoltatori',
-                'Sub un milion' => 'Mai puțin de 1 milion',
-                'Aproximativ 10 mii' => 'Aproximativ 10 mii de dezvoltatori'
+                'Trimite codul' => 'Trimite modificările pe serverul GitHub',
+                'Șterge codul' => 'Șterge fișierele de pe serverul GitHub',
+                'Descarcă' => 'Descarcă cele mai noi modificări'
             ],
-            'correct' => 'Peste 100 de milioane'
+            'correct' => 'Trimite codul'
         ]
     ]
 ];

@@ -76,6 +76,22 @@
         </div>
 
         <div class="sectiune">
+            <h2>Exemplu practic: Java</h2>
+            <p>În Java, absolut tot codul trebuie să fie conținut în interiorul unei <strong>clase</strong> (concepție pură de OOP). Iată exemplul de bază:</p>
+            <div class="code-block">
+<pre><code>public class Main {
+    public static void main(String[] args) {
+        String nume = "Student";
+        int nota = 10;
+        
+        System.out.println(nume + " a luat nota " + nota);
+    }
+}</code></pre>
+            </div>
+            <p>Metoda <code>public static void main(String[] args)</code> reprezintă punctul de intrare (start) al oricărei aplicații Java.</p>
+        </div>
+
+        <div class="sectiune">
             <h2>Quiz Java</h2>
             <p>Ești gata să îți testezi cunoștințele? Quiz-ul conține 5 întrebări grilă bazate strict pe textul de mai sus.</p>
             <br>

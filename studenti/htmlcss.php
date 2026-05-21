@@ -72,6 +72,27 @@
         </div>
 
         <div class="sectiune">
+            <h2>Exemplu practic: HTML & CSS</h2>
+            <p>Așa cum spuneam, HTML este scheletul, iar CSS-ul îi dă viață. Iată cum arată un buton stilizat:</p>
+            <div class="code-block">
+<pre><code>&lt;!-- Fișier HTML --&gt;
+&lt;button class="btn-frumos"&gt;Apasă-mă!&lt;/button&gt;
+
+&lt;!-- Fișier CSS --&gt;
+&lt;style&gt;
+.btn-frumos {
+    background-color: #6B21A8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+&lt;/style&gt;</code></pre>
+            </div>
+            <p>CSS-ul folosește selectorul de clasă (<code>.btn-frumos</code>) pentru a găsi elementul HTML și a-i schimba aspectul vizual.</p>
+        </div>
+
+        <div class="sectiune">
             <h2>Quiz HTML & CSS</h2>
             <p>Ești gata să îți testezi cunoștințele? Quiz-ul conține 5 întrebări grilă bazate strict pe textul de mai sus.</p>
             <br>

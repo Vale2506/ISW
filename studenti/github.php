@@ -75,6 +75,22 @@
         </div>
 
         <div class="sectiune">
+            <h2>Exemplu practic: Git Bash</h2>
+            <p>GitHub și Git se folosesc de obicei din linia de comandă (terminal). Iată fluxul standard pentru a salva și urca codul tău:</p>
+            <div class="code-block">
+<pre><code># 1. Adăugăm toate fișierele modificate
+git add .
+
+# 2. Salvăm modificările local cu un mesaj descriptiv
+git commit -m "Adaugat stiluri noi pentru butoane"
+
+# 3. Trimitem modificările pe serverul GitHub
+git push origin main</code></pre>
+            </div>
+            <p>Acest flux (add -> commit -> push) este repetat zilnic de milioane de programatori.</p>
+        </div>
+
+        <div class="sectiune">
             <h2>Quiz GitHub & Git</h2>
             <p>Ești gata să îți testezi cunoștințele? Quiz-ul conține 5 întrebări grilă bazate strict pe textul de mai sus.</p>
             <br>

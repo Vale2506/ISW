@@ -69,6 +69,23 @@
         </div>
 
         <div class="sectiune">
+            <h2>Exemplu practic: C++</h2>
+            <p>Iată cum arată faimosul program "Hello World" scris în C++, folosind biblioteca standard pentru afișare (<code>iostream</code>):</p>
+            <div class="code-block">
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    // Afișăm un mesaj pe ecran
+    cout &lt;&lt; "Salutare! Bine ai venit in lumea C++!" &lt;&lt; endl;
+    return 0;
+}</code></pre>
+            </div>
+            <p>Spre deosebire de Python, în C++ fiecare instrucțiune trebuie să se termine obligatoriu cu punct și virgulă (<code>;</code>).</p>
+        </div>
+
+        <div class="sectiune">
             <h2>Quiz C/C++/C#</h2>
             <p>Ești gata să îți testezi cunoștințele? Quiz-ul conține 5 întrebări grilă bazate strict pe textul de mai sus.</p>
             <br>

@@ -67,6 +67,20 @@
         </div>
 
         <div class="sectiune">
+            <h2>Exemplu practic: Python</h2>
+            <p>Sintaxa Python este faimoasă pentru claritate. Iată cum definim o funcție simplă care afișează un salut, folosind indentarea corectă:</p>
+            <div class="code-block">
+<pre><code>def salut_student(nume):
+    print("Salutare, " + nume + "!")
+    print("Bine ai venit la cursul de Python.")
+
+# Apelăm funcția
+salut_student("Alex")</code></pre>
+            </div>
+            <p>Observi lipsa punctului și virgulei (<code>;</code>) la final de rând și folosirea cuvântului cheie <code>def</code>.</p>
+        </div>
+
+        <div class="sectiune">
             <h2>Quiz Python</h2>
             <p>Ești gata să îți testezi cunoștințele? Quiz-ul conține 5 întrebări grilă bazate strict pe textul de mai sus.</p>
             <br>
